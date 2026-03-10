@@ -9,6 +9,6 @@
     { "rel": "root", "href": "./catalog.json", "type": "application/json" },
     { "rel": "self", "href": "./catalog.json", "type": "application/json" },
     { "rel": "child", "href": "./synthesis_map/catalog.json", "type": "application/json", "title": "Synthesis Map" },
-    { "rel": "child", "href": "./training_data/catalog.json", "type": "application/json", "title": "EcoTrain" }
+    { "rel": "child", "href": "./ecotrain/catalog.json", "type": "application/json", "title": "EcoTrain" }
   ]
 }
