@@ -1,0 +1,56 @@
+{
+  "type": "Collection",
+  "stac_version": "1.1.0",
+  "id": "ecotrain-training-data",
+  "title": "EcoTrain Training Dataset",
+  "description": "EcoTrain is a geospatial training dataset of Ecosystem Functional Groups (EFGs) as defined in the IUCN Global Ecosystem Typology (GET). Each feature represents a single labeled training sample with associated spatial, temporal, methodological, and interpretative metadata. The dataset is provided as GeoJSON vector assets with multiple spatial supports (point, 10m, and 100m polygons) and is designed for Earth observation analysis, spatial modelling, and machine learning workflows.",
+
+  "keywords": [
+    "ecosystem",
+    "Ecosystem Functional Group",
+    "EFG",
+    "Global Ecosystem Typology",
+    "GET",
+    "International Union for Conservation of Nature",
+    "IUCN",
+    "Global Ecosystems Atlas",
+    "training data",
+    "training dataset",
+    "machine learning",
+    "earth observation",
+    "GeoJSON"
+  ],
+
+  "license": "other",
+
+  "providers": [
+    {
+      "name": "JCU Global Ecology Lab",
+      "roles": ["producer"],
+      "url": "https://www.globalecologylab.org/"
+    },
+    {
+      "name": "Global Ecosystem Atlas",
+      "roles": ["host", "licensor"],
+      "url": "https://globalecosystemsatlas.org/"
+    }
+  ],
+
+  "extent": {
+    "spatial": {
+      "bbox": [[-180.0, -90.0, 180.0, 90.0]]
+    },
+    "temporal": {
+      "interval": [["2025-01-01T00:00:00Z", null]]
+    }
+  },
+
+  "links": [
+    { "rel": "root", "href": "../../catalog.json", "type": "application/json" },
+    { "rel": "self", "href": "./collection.json", "type": "application/json" },
+    { "rel": "describedby", "href": "https://github.com/Global-Ecosystems-Atlas/ecotrain/wiki", "type": "text/html", "title": "EcoTrain Wiki" },
+    { "rel": "item", "href": "./items/ecotrain_v0_1_0.json", "type": "application/json", "title": "EcoTrain v0.1.0" },
+    { "rel": "item", "href": "./items/ecotrain_v0_1_1.json", "type": "application/json", "title": "EcoTrain v0.1.1" },
+    { "rel": "item", "href": "./items/ecotrain_v0_1_2.json", "type": "application/json", "title": "EcoTrain v0.1.2 (Latest)" }
+  ]
+}

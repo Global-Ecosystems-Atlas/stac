@@ -1,0 +1,49 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions" : ["https://stac-extensions.github.io/version/v1.2.0/schema.json"],
+  "id": "ecotrain-training-data-v0-1-2",
+  "collection": "ecotrain-training-data",
+
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [[[-180.0, -90.0], [180.0, -90.0], [180.0, 90.0], [-180.0, 90.0], [-180.0, -90.0]]]
+  },
+  "bbox": [-180.0, -90.0, 180.0, 90.0],
+
+  "properties": {
+    "title": "EcoTrain Training Dataset v0.1.2",
+    "datetime": "2025-01-01T00:00:00Z",
+    "version": "0.1.2",
+    "gea:num_training_samples": 27532
+  },
+
+  "links": [
+    { "rel": "root", "href": "../../../catalog.json", "type": "application/json" },
+    { "rel": "self", "href": "./ecotrain_v0_1_2.json", "type": "application/json" },
+    { "rel": "parent", "href": "../collection.json", "type": "application/json" },
+    { "rel": "collection", "href": "../collection.json", "type": "application/json" },
+    { "rel": "predecessor-version", "href": "./ecotrain_v0_1_1.json" }
+  ],
+
+  "assets": {
+    "points": {
+      "href": "",
+      "type": "application/geo+json",
+      "roles": ["training-data", "vector", "points"],
+      "description": "Point geometries representing the reference GPS location of each EcoTrain training sample."
+    },
+    "polygons_10m": {
+      "href": "",
+      "type": "application/geo+json",
+      "roles": ["training-data", "vector", "polygons"],
+      "description": "Square polygon geometries (10m x 10m) centred on the reference GPS location of each EcoTrain training sample."
+    },
+    "polygons_100m": {
+      "href": "",
+      "type": "application/geo+json",
+      "roles": ["training-data", "vector", "polygons"],
+      "description": "Square polygon geometries (100m x 100m) centred on the reference GPS location of each EcoTrain training sample."
+    }
+  }
+}

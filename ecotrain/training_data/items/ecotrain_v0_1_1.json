@@ -1,0 +1,52 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions" : ["https://stac-extensions.github.io/version/v1.2.0/schema.json"],
+  "id": "ecotrain_training_data_v0_1_1",
+  "collection": "ecotrain_training_data",
+
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [[[-180.0, -90.0], [180.0, -90.0], [180.0, 90.0], [-180.0, 90.0], [-180.0, -90.0]]]
+  },
+  "bbox": [-180.0, -90.0, 180.0, 90.0],
+
+  "properties": {
+    "title": "EcoTrain Training Dataset v0.1.1",
+    "datetime": "2025-01-01T00:00:00Z",
+    "version": "0.1.1",
+    "deprecated": true,
+    "gea:num_training_samples": 24202
+  },
+
+  "links": [
+    { "rel": "root", "href": "../../../catalog.json", "type": "application/json" },
+    { "rel": "self", "href": "./ecotrain_v0_1_1.json", "type": "application/json" },
+    { "rel": "parent", "href": "../collection.json", "type": "application/json" },
+    { "rel": "collection", "href": "../collection.json", "type": "application/json" },
+    { "rel": "predecessor-version", "href": "./ecotrain_v0_1_0.json" },
+    { "rel": "successor-version", "href": "./ecotrain_v0_1_2.json" },
+    { "rel": "latest-version", "href": "./ecotrain_v0_1_2.json" }
+  ],
+
+  "assets": {
+    "points": {
+      "href": "",
+      "type": "application/geo+json",
+      "roles": ["training-data", "vector", "points"],
+      "description": "Point geometries representing the reference GPS location of each EcoTrain training sample."
+    },
+    "polygons_10m": {
+      "href": "",
+      "type": "application/geo+json",
+      "roles": ["training-data", "vector", "polygons"],
+      "description": "Square polygon geometries (10m x 10m) centred on the reference GPS location of each EcoTrain training sample."
+    },
+    "polygons_100m": {
+      "href": "",
+      "type": "application/geo+json",
+      "roles": ["training-data", "vector", "polygons"],
+      "description": "Square polygon geometries (100m x 100m) centred on the reference GPS location of each EcoTrain training sample."
+    }
+  }
+}
