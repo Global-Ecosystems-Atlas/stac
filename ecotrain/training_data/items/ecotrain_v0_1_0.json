@@ -2,8 +2,8 @@
   "type": "Feature",
   "stac_version": "1.1.0",
   "stac_extensions" : ["https://stac-extensions.github.io/version/v1.2.0/schema.json"],
-  "id": "ecotrain_training_data_v0_1_0",
-  "collection": "ecotrain_training_data",
+  "id": "gea-ecotrain-training-data-v0-1-0",
+  "collection": "gea-ecotrain-training-data",
 
   "geometry": {
     "type": "Polygon",

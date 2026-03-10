@@ -1,7 +1,7 @@
 {
   "type": "Collection",
   "stac_version": "1.1.0",
-  "id": "ecotrain-training-data",
+  "id": "gea-ecotrain-training-data",
   "title": "EcoTrain Training Dataset",
   "description": "EcoTrain is a geospatial training dataset of Ecosystem Functional Groups (EFGs) as defined in the IUCN Global Ecosystem Typology (GET). Each feature represents a single labeled training sample with associated spatial, temporal, methodological, and interpretative metadata. The dataset is provided as GeoJSON vector assets with multiple spatial supports (point, 10m, and 100m polygons) and is designed for Earth observation analysis, spatial modelling, and machine learning workflows.",
 
@@ -49,8 +49,8 @@
     { "rel": "root", "href": "../../catalog.json", "type": "application/json" },
     { "rel": "self", "href": "./collection.json", "type": "application/json" },
     { "rel": "describedby", "href": "https://github.com/Global-Ecosystems-Atlas/ecotrain/wiki", "type": "text/html", "title": "EcoTrain Wiki" },
-    { "rel": "item", "href": "./items/ecotrain_v0_1_0.json", "type": "application/json", "title": "EcoTrain v0.1.0" },
-    { "rel": "item", "href": "./items/ecotrain_v0_1_1.json", "type": "application/json", "title": "EcoTrain v0.1.1" },
-    { "rel": "item", "href": "./items/ecotrain_v0_1_2.json", "type": "application/json", "title": "EcoTrain v0.1.2 (Latest)" }
+    { "rel": "item", "href": "./items/ecotrain_v0_1_0.json", "type": "application/json", "title": "EcoTrain Training Dataset v0.1.0" },
+    { "rel": "item", "href": "./items/ecotrain_v0_1_1.json", "type": "application/json", "title": "EcoTrain Training Dataset v0.1.1" },
+    { "rel": "item", "href": "./items/ecotrain_v0_1_2.json", "type": "application/json", "title": "EcoTrain Training Dataset v0.1.2 (Latest)" }
   ]
 }

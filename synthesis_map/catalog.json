@@ -2,7 +2,7 @@
   "type": "Catalog",
   "stac_version": "1.1.0",
   "id": "gea-synthesis-map",
-  "title": "Global Ecosystems Atlas Synthesis Map",
+  "title": "Synthesis Map",
   "description": "Access point for the Global Ecosystems Atlas (GEA) Synthesis Map and its associated snippets.",
   
   "links": [
