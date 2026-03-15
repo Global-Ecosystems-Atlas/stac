@@ -1,20 +1,25 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
+  "stac_extensions" : [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
   "id": "gea-synthesis-map-snippet-2-v0-0-12",
   "collection": "gea-synthesis-map-snippets-v0-0-12",
 
   "geometry": {
     "type": "Polygon",
-    "coordinates": [[[-73.099752, -54.484908], [-70.087375, -54.484908], [-70.087375, -52.685488], [-73.099752, -52.685488], [-73.099752, -54.484908]]]
+    "coordinates": [[[-73.851525, -54.308453], [-70.851659, -54.308453], [-70.851659, -52.509033], [-73.851525, -52.509033], [-73.851525, -54.308453]]]
   },
-  "bbox": [-73.099752, -54.484908, -70.087375, -52.685488],
+  "bbox": [-73.851525, -54.308453, -70.851659, -52.509033],
 
   "properties": {
     "title": "GEA Synthesis Map Snippet 2 (Chile) - v0.0.12",
     "description": "Snippet of the Global Ecosystems Atlas Synthesis Map (v0.0.12) in Chile.",
     "datetime": "2025-01-01T00:00:00Z",
-    "version": "0.0.12"
+    "version": "0.0.12",
+    "proj:epsg": 4326
   },
 
   "links": [
@@ -36,8 +41,25 @@
       "href": "https://storage.googleapis.com/gea_synthesis_map_prod_distribution/snippets/v0_0_12/gea_synthesis_v0_0_12_snippet_2.tif",
       "title": "Global Ecosystems Atlas Synthesis Map",
       "description": "A 3-band multi-class Cloud Optimised GeoTIFF that depicts the distributions of ecosystem functional groups, biomes and realms.",
-      "type": "image/tiff; application=geotiff",
-      "roles": ["data"]
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": ["data"],
+      "raster:bands": [
+        {
+          "name": "efg",
+          "description": "Pixel values represent ecosystem functional groups according to the GEA numeral scheme.",
+          "data_type": "uint8"
+        },
+        {
+          "name": "biome",
+          "description": "Pixel values represent biome type according to the GEA numeral scheme.",
+          "data_type": "uint8"
+        },
+        {
+          "name": "realm",
+          "description": "Pixel values represents realm type according to the GEA numeral scheme.",
+          "data_type": "uint8"
+        }
+      ]
     },
     "gea_standalone": {
       "href": "https://storage.googleapis.com/gea_synthesis_map_prod_distribution/snippets/v0_0_12/gea_standalone_v0_0_12_snippet_2.tif",
@@ -50,15 +72,49 @@
       "href": "https://storage.googleapis.com/gea_synthesis_map_prod_distribution/snippets/v0_0_12/gea_data_mask_v0_0_12_snippet_2.tif",
       "title": "Global Ecosystems Atlas Data Mask",
       "description": "A 3-band Cloud Optimised GeoTIFF with bands intended to support analyses of the gea_synthesis and gea_standalone data products.",
-      "type": "image/tiff; application=geotiff",
-      "roles": ["data"]
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": ["data"],
+      "raster:bands": [
+        {
+          "name": "data_mask",
+          "description": "Pixel values represent (0) no data, (1) valid data, (2) source data that could not be cross-referenced to the Global Ecosystem Typology.",
+          "data_type": "uint8"
+        },
+        {
+          "name": "efg_disagreement",
+          "description": "Pixel values represent the number of different ecosystems mapped by overlapping source datasets.",
+          "data_type": "uint8"
+        },
+        {
+          "name": "dataset_count",
+          "description": "Pixel values represent the number of source datasets that have mapped the pixel.",
+          "data_type": "uint8"
+        }
+      ]
     },
     "gea_sources": {
       "href": "https://storage.googleapis.com/gea_synthesis_map_prod_distribution/snippets/v0_0_12/gea_sources_v0_0_12_snippet_2.tif",
       "title": "Global Ecosystems Atlas Source Data",
       "description": "A 3-band Cloud Optimised GeoTIFF with bands that depict aspects of the source data, such as source data id, the year the data were produced and the native cell size of source data.",
-      "type": "image/tiff; application=geotiff",
-      "roles": ["data"]
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": ["data"],
+      "raster:bands": [
+        {
+          "name": "source_id",
+          "description": "The individual identifier for each source dataset in the Global Ecosystems Atlas.",
+          "data_type": "uint16"
+        },
+        {
+          "name": "cell_size",
+          "description": "The pixel size in metres of the source dataset.",
+          "data_type": "uint16"
+        },
+        {
+          "name": "dataset_year",
+          "description": "The production year of the source dataset.",
+          "data_type": "uint16"
+        }
+      ]
     }
   }
 }

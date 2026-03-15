@@ -35,17 +35,12 @@
   "extent": {
     "spatial": {
       "bbox": [
-        [-100.345479, -54.484908, 147.363824, 53.299578],
-        [17.215799, -32.177922, 19.308035, -30.378498],
-        [139.974001, -24.725328, 141.928683, -22.925903],
-        [-73.099752, -54.484908, -70.087375, -52.685488],
-        [-69.115180, -9.660156, -67.306059, -7.860730],
-        [-46.366414, -19.113615, -44.484028, -17.314189],
-        [-100.345479, 20.691348, -98.422788, 22.490778],
-        [14.081930, 37.105205, 16.350543, 38.904636],
-        [8.750470, 43.854926, 11.268090, 45.654359],
-        [3.956078, 51.500144, 6.887877, 53.299578],
-        [145.472576, 18.137581, 147.363824, 19.937010]
+        [-73.851525, -54.308453, 141.275457, 38.904636],
+        [26.456374, -33.972505, 28.590263, -32.173081],
+        [139.308820, -25.501850, 141.275457, -23.702425],
+        [-73.851525, -54.308453, -70.851659, -52.509033],
+        [-64.216451, 1.927893, -62.426332, 3.727320],
+        [14.081930, 37.105205, 16.350543, 38.904636]
       ]
     },
     "temporal": {
@@ -60,12 +55,7 @@
     { "rel": "item", "href": "./items/snippet_0.json", "type": "application/json", "title": "GEA Synthesis Map Snippet 0 (South Africa) - v0.0.12" },
     { "rel": "item", "href": "./items/snippet_1.json", "type": "application/json", "title": "GEA Synthesis Map Snippet 1 (Australia) - v0.0.12" },
     { "rel": "item", "href": "./items/snippet_2.json", "type": "application/json", "title": "GEA Synthesis Map Snippet 2 (Chile) - v0.0.12" },
-    { "rel": "item", "href": "./items/snippet_3.json", "type": "application/json", "title": "GEA Synthesis Map Snippet 3 (Brazil West) - v0.0.12" },
-    { "rel": "item", "href": "./items/snippet_4.json", "type": "application/json", "title": "GEA Synthesis Map Snippet 4 (Brazil East) - v0.0.12" },
-    { "rel": "item", "href": "./items/snippet_5.json", "type": "application/json", "title": "GEA Synthesis Map Snippet 5 (Mexico) - v0.0.12" },
-    { "rel": "item", "href": "./items/snippet_6.json", "type": "application/json", "title": "GEA Synthesis Map Snippet 6 (Italy South) - v0.0.12" },
-    { "rel": "item", "href": "./items/snippet_7.json", "type": "application/json", "title": "GEA Synthesis Map Snippet 7 (Italy North) - v0.0.12" },
-    { "rel": "item", "href": "./items/snippet_8.json", "type": "application/json", "title": "GEA Synthesis Map Snippet 8 (Netherlands) - v0.0.12" },
-    { "rel": "item", "href": "./items/snippet_9.json", "type": "application/json", "title": "GEA Synthesis Map Snippet 9 (Northern Mariana Islands) - v0.0.12" }
+    { "rel": "item", "href": "./items/snippet_3.json", "type": "application/json", "title": "GEA Synthesis Map Snippet 3 (Brazil) - v0.0.12" },
+    { "rel": "item", "href": "./items/snippet_4.json", "type": "application/json", "title": "GEA Synthesis Map Snippet 4 (Italy) - v0.0.12" }
   ]
 }
