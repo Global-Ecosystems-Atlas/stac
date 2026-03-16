@@ -65,7 +65,7 @@
       "href": "https://storage.googleapis.com/gea_synthesis_map_prod_distribution/snippets/v0_0_12/gea_standalone_v0_0_12_snippet_2.tif",
       "title": "Global Ecosystems Atlas Standalone Ecosystems",
       "description": "A multiband Cloud Optimised GeoTIFF that depicts the distributions of ecosystems that cannot be served in a multiclass raster due to overlying or underlying other ecosystem types, such as pelagic ecosystems or sea ice.",
-      "type": "image/tiff; application=geotiff",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "roles": ["data"]
     },
     "gea_data_mask": {
