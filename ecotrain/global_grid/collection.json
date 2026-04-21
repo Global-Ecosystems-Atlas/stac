@@ -1,0 +1,48 @@
+{
+  "type": "Collection",
+  "stac_version": "1.1.0",
+  "id": "gea-ecotrain-global-grid",
+  "title": "EcoTrain Global Grid",
+  "description": "A global tessellation consisting of 800 grid cells used for spatial partitioning, indexing, and sampling of the EcoTrain training dataset. This grid ensures consistent spatial support for machine learning workflows and data distribution.",
+
+  "keywords": [
+    "grid",
+    "tessellation",
+    "spatial index",
+    "reference system",
+    "partitioning",
+    "global"
+  ],
+
+  "license": "other",
+
+  "providers": [
+    {
+      "name": "JCU Global Ecology Lab",
+      "roles": ["producer"],
+      "url": "https://www.globalecologylab.org/"
+    },
+    {
+      "name": "Global Ecosystem Atlas",
+      "roles": ["host", "licensor"],
+      "url": "https://globalecosystemsatlas.org/"
+    }
+  ],
+
+  "extent": {
+    "spatial": {
+      "bbox": [[-180.0, -90.0, 180.0, 90.0]]
+    },
+    "temporal": {
+      "interval": [[null, null]]
+    }
+  },
+
+  "links": [
+    { "rel": "root", "href": "../../catalog.json", "type": "application/json" },
+    { "rel": "self", "href": "./collection.json", "type": "application/json" },
+    { "rel": "describedby", "href": "https://github.com/Global-Ecosystems-Atlas/ecotrain/wiki", "type": "text/html", "title": "EcoTrain Wiki" },
+    { "rel": "derived_from", "href": "../training-data/collection.json", "type": "application/json", "title": "EcoTrain Training Dataset"},
+    { "rel": "item", "href": "./items/global_grid_v1_0_0.json", "type": "application/json", "title": "EcoTrain Global Grid v1.0.0 (Latest)" }
+  ]
+}

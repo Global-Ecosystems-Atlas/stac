@@ -17,8 +17,7 @@
     "training data",
     "training dataset",
     "machine learning",
-    "earth observation",
-    "GeoJSON"
+    "earth observation"
   ],
 
   "license": "other",
@@ -49,8 +48,10 @@
     { "rel": "root", "href": "../../catalog.json", "type": "application/json" },
     { "rel": "self", "href": "./collection.json", "type": "application/json" },
     { "rel": "describedby", "href": "https://github.com/Global-Ecosystems-Atlas/ecotrain/wiki", "type": "text/html", "title": "EcoTrain Wiki" },
+    { "rel": "related", "href": "../global_grid/collection.json", "type": "application/json", "title": "EcoTrain Global Grid" },
     { "rel": "item", "href": "./items/ecotrain_v0_1_0.json", "type": "application/json", "title": "EcoTrain Training Dataset v0.1.0" },
     { "rel": "item", "href": "./items/ecotrain_v0_1_1.json", "type": "application/json", "title": "EcoTrain Training Dataset v0.1.1" },
-    { "rel": "item", "href": "./items/ecotrain_v0_1_2.json", "type": "application/json", "title": "EcoTrain Training Dataset v0.1.2 (Latest)" }
+    { "rel": "item", "href": "./items/ecotrain_v0_1_2.json", "type": "application/json", "title": "EcoTrain Training Dataset v0.1.2" },
+    { "rel": "item", "href": "./items/ecotrain_v0_1_3.json", "type": "application/json", "title": "EcoTrain Training Dataset v0.1.3 (Latest)" }
   ]
 }

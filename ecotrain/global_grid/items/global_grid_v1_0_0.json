@@ -1,0 +1,44 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions" : ["https://stac-extensions.github.io/version/v1.2.0/schema.json"],
+  "id": "gea-ecotrain-global-grid-v1-0-0",
+  "collection": "gea-ecotrain-global-grid",
+
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [[[-180.0, -90.0], [180.0, -90.0], [180.0, 90.0], [-180.0, 90.0], [-180.0, -90.0]]]
+  },
+  "bbox": [-180.0, -90.0, 180.0, 90.0],
+
+  "properties": {
+    "title": "EcoTrain Global Grid v1.0.0",
+    "datetime": "2025-01-01T00:00:00Z",
+    "version": "1.0.0",
+    "gea:num_grids": 800
+  },
+
+  "links": [
+    { "rel": "root", "href": "../../../catalog.json", "type": "application/json" },
+    { "rel": "self", "href": "./global_grid_v1_0_0.json", "type": "application/json" },
+    { "rel": "parent", "href": "../collection.json", "type": "application/json" },
+    { "rel": "collection", "href": "../collection.json", "type": "application/json" }
+  ],
+
+  "assets": {
+    "grid_geojson": {
+      "href": "https://storage.googleapis.com/gea_training_validation_data_prod_distribution/ecotrain/foundation/global_grid/v1_0_0/global_grid.geojson",
+      "title": "Global Grid (GeoJSON)",
+      "description": "The 800-cell global grid in GeoJSON format. Best for web-based GIS and Python environments.",
+      "type": "application/geo+json",
+      "roles": ["data"]
+    },
+    "grid_shapefile": {
+      "href": "https://storage.googleapis.com/gea_training_validation_data_prod_distribution/ecotrain/foundation/global_grid/v1_0_0/global_grid.zip",
+      "title": "Global Grid (Shapefile)",
+      "description": "The 800-cell global grid in zipped ESRI Shapefile format. Best for desktop GIS software like ArcGIS or QGIS.",
+      "type": "application/zip",
+      "roles": ["data"]
+    }
+  }
+}
