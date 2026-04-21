@@ -1,7 +1,10 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions" : ["https://stac-extensions.github.io/version/v1.2.0/schema.json"],
+  "stac_extensions" : [
+    "https://stac-extensions.github.io/version/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
   "id": "gea-ecotrain-training-dataset-v0-1-0",
   "collection": "gea-ecotrain-training-dataset",
 
@@ -15,6 +18,7 @@
     "title": "EcoTrain Training Dataset v0.1.0",
     "datetime": "2025-01-01T00:00:00Z",
     "version": "0.1.0",
+    "proj:epsg": 4326,
     "deprecated": true,
     "gea:num_training_samples": 19118
   },
@@ -39,14 +43,14 @@
     "polygons_10m": {
       "href": "",
       "title": "Polygons 10 m",
-      "description": "Square polygon geometries (10m x 10m) centred on the reference GPS location of each EcoTrain training sample.",
+      "description": "Square polygon geometries (10 m x 10 m) centred on the reference GPS location of each EcoTrain training sample.",
       "type": "application/geo+json",
       "roles": ["data"]
     },
     "polygons_100m": {
       "href": "",
       "title": "Polygons 100 m",
-      "description": "Square polygon geometries (100m x 100m) centred on the reference GPS location of each EcoTrain training sample.",
+      "description": "Square polygon geometries (100 m x 100 m) centred on the reference GPS location of each EcoTrain training sample.",
       "type": "application/geo+json",
       "roles": ["data"]
     }
