@@ -34,7 +34,7 @@
       "href": "./global_grid_map_thumbnail.jpg",
       "type": "image/jpeg",
       "title": "Thumbnail",
-      "roles": ["thumbnail"]
+      "roles": ["thumbnail", "visual"]
     },
     "grid_geojson": {
       "href": "https://storage.googleapis.com/gea_training_validation_data_prod_distribution/ecotrain/foundation/global_grid/v1_0_0/global_grid.geojson",
