@@ -24,12 +24,18 @@
 
   "links": [
     { "rel": "root", "href": "../../../catalog.json", "type": "application/json" },
-    { "rel": "self", "href": "./global_grid_v1_0_0.json", "type": "application/json" },
+    { "rel": "self", "href": "./global_grid.json", "type": "application/json" },
     { "rel": "parent", "href": "../collection.json", "type": "application/json" },
     { "rel": "collection", "href": "../collection.json", "type": "application/json" }
   ],
 
   "assets": {
+    "thumbnail": {
+      "href": "./global_grid_map_thumbnail.jpg",
+      "type": "image/jpeg",
+      "title": "Thumbnail",
+      "roles": ["thumbnail"]
+    },
     "grid_geojson": {
       "href": "https://storage.googleapis.com/gea_training_validation_data_prod_distribution/ecotrain/foundation/global_grid/v1_0_0/global_grid.geojson",
       "title": "Global Grid (GeoJSON)",
