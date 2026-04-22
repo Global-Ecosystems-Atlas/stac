@@ -47,6 +47,7 @@
   "links": [
     { "rel": "root", "href": "../../catalog.json", "type": "application/json" },
     { "rel": "self", "href": "./collection.json", "type": "application/json" },
+    { "rel": "parent", "href": "../catalog.json", "type": "application/json" },
     { "rel": "describedby", "href": "https://github.com/Global-Ecosystems-Atlas/ecotrain/wiki", "type": "text/html", "title": "EcoTrain Wiki" },
     { "rel": "related", "href": "../global_grid/collection.json", "type": "application/json", "title": "EcoTrain Global Grid" },
     { "rel": "item", "href": "./items/ecotrain_v0_1_0.json", "type": "application/json", "title": "EcoTrain Training Dataset v0.1.0" },

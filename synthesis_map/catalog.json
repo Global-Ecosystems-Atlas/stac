@@ -8,6 +8,7 @@
   "links": [
     { "rel": "root", "href": "../catalog.json", "type": "application/json" },
     { "rel": "self", "href": "./catalog.json", "type": "application/json" },
+    { "rel": "parent", "href": "../catalog.json", "type": "application/json" },
     { "rel": "child", "href": "./snippets_v0_0_12/collection.json", "type": "application/json", "title": "GEA Synthesis Map Snippets - v0.0.12" }
   ]
 }
