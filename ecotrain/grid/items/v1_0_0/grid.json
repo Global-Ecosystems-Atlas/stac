@@ -5,8 +5,8 @@
     "https://stac-extensions.github.io/version/v1.2.0/schema.json",
     "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
   ],
-  "id": "gea-ecotrain-global-grid-v1-0-0",
-  "collection": "gea-ecotrain-global-grid",
+  "id": "gea-ecotrain-grid-v1-0-0",
+  "collection": "gea-ecotrain-grid",
 
   "geometry": {
     "type": "Polygon",
@@ -15,7 +15,7 @@
   "bbox": [-180.0, -90.0, 180.0, 90.0],
 
   "properties": {
-    "title": "EcoTrain Global Grid v1.0.0",
+    "title": "EcoTrain Grid v1.0.0",
     "datetime": "2025-01-01T00:00:00Z",
     "version": "1.0.0",
     "proj:epsg": 4326,
@@ -24,29 +24,29 @@
 
   "links": [
     { "rel": "root", "href": "../../../../catalog.json", "type": "application/json" },
-    { "rel": "self", "href": "./global_grid.json", "type": "application/json" },
+    { "rel": "self", "href": "./grid.json", "type": "application/json" },
     { "rel": "parent", "href": "../../collection.json", "type": "application/json" },
     { "rel": "collection", "href": "../../collection.json", "type": "application/json" }
   ],
 
   "assets": {
     "thumbnail": {
-      "href": "./global_grid_map_thumbnail.jpg",
+      "href": "./grid_map_thumbnail.jpg",
       "type": "image/jpeg",
       "title": "Thumbnail",
       "roles": ["thumbnail"]
     },
     "grid_geojson": {
       "href": "https://storage.googleapis.com/gea_training_validation_data_prod_distribution/ecotrain/foundation/global_grid/v1_0_0/global_grid.geojson",
-      "title": "Global Grid (GeoJSON)",
-      "description": "The 800-cell global grid in GeoJSON format. Best for web-based GIS and Python environments.",
+      "title": "Grid (GeoJSON)",
+      "description": "The 800-cell grid in GeoJSON format. Best for web-based GIS and Python environments.",
       "type": "application/geo+json",
       "roles": ["data"]
     },
     "grid_shapefile": {
       "href": "https://storage.googleapis.com/gea_training_validation_data_prod_distribution/ecotrain/foundation/global_grid/v1_0_0/global_grid.zip",
-      "title": "Global Grid (Shapefile)",
-      "description": "The 800-cell global grid in zipped ESRI Shapefile format. Best for desktop GIS software like ArcGIS or QGIS.",
+      "title": "Grid (Shapefile)",
+      "description": "The 800-cell grid in zipped ESRI Shapefile format. Best for desktop GIS software like ArcGIS or QGIS.",
       "type": "application/zip",
       "roles": ["data"]
     }

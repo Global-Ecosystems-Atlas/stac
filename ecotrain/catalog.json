@@ -3,13 +3,13 @@
   "stac_version": "1.1.0",
   "id": "gea-ecotrain",
   "title": "EcoTrain",
-  "description": "Access point for the EcoTrain training data and all associated datasets.",
+  "description": "Access point for the EcoTrain Training Dataset and all associated datasets.",
   
   "links": [
     { "rel": "root", "href": "../catalog.json", "type": "application/json" },
     { "rel": "self", "href": "./catalog.json", "type": "application/json" },
     { "rel": "parent", "href": "../catalog.json", "type": "application/json" },
     { "rel": "child", "href": "./training_data/collection.json", "type": "application/json", "title": "EcoTrain Training Dataset" },
-    { "rel": "child", "href": "./global_grid/collection.json", "type": "application/json", "title": "EcoTrain Global Grid" }
+    { "rel": "child", "href": "./grid/collection.json", "type": "application/json", "title": "EcoTrain Grid" }
   ]
 }

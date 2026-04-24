@@ -1,8 +1,8 @@
 {
   "type": "Collection",
   "stac_version": "1.1.0",
-  "id": "gea-ecotrain-global-grid",
-  "title": "EcoTrain Global Grid",
+  "id": "gea-ecotrain-grid",
+  "title": "EcoTrain Grid",
   "description": "A global tessellation consisting of 800 grid cells used for spatial partitioning, indexing, and sampling of the EcoTrain training dataset. This grid ensures consistent spatial support for machine learning workflows and data distribution.",
 
   "keywords": [
@@ -44,6 +44,6 @@
     { "rel": "parent", "href": "../catalog.json", "type": "application/json" },
     { "rel": "describedby", "href": "https://github.com/Global-Ecosystems-Atlas/ecotrain/wiki", "type": "text/html", "title": "EcoTrain Wiki" },
     { "rel": "derived_from", "href": "../training_data/collection.json", "type": "application/json", "title": "EcoTrain Training Dataset"},
-    { "rel": "item", "href": "./items/v1_0_0/global_grid.json", "type": "application/json", "title": "EcoTrain Global Grid v1.0.0 (Latest)" }
+    { "rel": "item", "href": "./items/v1_0_0/grid.json", "type": "application/json", "title": "EcoTrain Grid v1.0.0 (Latest)" }
   ]
 }

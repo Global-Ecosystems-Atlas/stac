@@ -3,7 +3,7 @@
   "stac_version": "1.1.0",
   "id": "gea",
   "title": "Global Ecosystems Atlas",
-  "description": "The central access point for all geospatial data products associated with the Global Ecosystems Atlas (GEA).",
+  "description": "The Global Ecosystems Atlas is a collaborative effort to build the world's most comprehensive, standardised resource on the distribution, condition and change of all ecosystems. Convened by the Group on Earth Observations (GEO) with the Secretariat of the Convention on Biological Diversity (CBD) and the International Union for Conservation of Nature (IUCN), it supports national reporting, corporate disclosure, private investment, conservation and local action, while complementing existing initiatives.\n\nAs a digital public good, it provides a multi-layer, trusted foundation for ecosystem intelligence that countries, communities, businesses and solution providers can integrate and build on. With 2030 as the convergence point for global environmental goals, the Global Ecosystems Atlas will be the shared evidence base that shows where ecosystems are, how they are changing, where action is working and where ambition must increase.",
   
   "links": [
     { "rel": "root", "href": "./catalog.json", "type": "application/json" },
