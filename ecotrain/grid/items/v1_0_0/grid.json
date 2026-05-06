@@ -37,14 +37,14 @@
       "roles": ["thumbnail"]
     },
     "grid_geojson": {
-      "href": "https://storage.googleapis.com/gea_training_validation_data_prod_distribution/ecotrain/foundation/global_grid/v1_0_0/global_grid.geojson",
+      "href": "https://storage.googleapis.com/gea_training_validation_data_prod_distribution/ecotrain/foundation/grid/v1_0_0/grid.geojson",
       "title": "Grid (GeoJSON)",
       "description": "The 800-cell grid in GeoJSON format. Best for web-based GIS and Python environments.",
       "type": "application/geo+json",
       "roles": ["data"]
     },
     "grid_shapefile": {
-      "href": "https://storage.googleapis.com/gea_training_validation_data_prod_distribution/ecotrain/foundation/global_grid/v1_0_0/global_grid.zip",
+      "href": "https://storage.googleapis.com/gea_training_validation_data_prod_distribution/ecotrain/foundation/grid/v1_0_0/grid.zip",
       "title": "Grid (Shapefile)",
       "description": "The 800-cell grid in zipped ESRI Shapefile format. Best for desktop GIS software like ArcGIS or QGIS.",
       "type": "application/zip",
