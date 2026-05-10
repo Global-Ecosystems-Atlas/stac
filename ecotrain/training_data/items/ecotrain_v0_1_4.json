@@ -5,7 +5,7 @@
     "https://stac-extensions.github.io/version/v1.2.0/schema.json",
     "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
   ],
-  "id": "gea-ecotrain-training-dataset-v0-1-3",
+  "id": "gea-ecotrain-training-dataset-v0-1-4",
   "collection": "gea-ecotrain-training-dataset",
 
   "geometry": {
@@ -15,22 +15,19 @@
   "bbox": [-180.0, -90.0, 180.0, 90.0],
 
   "properties": {
-    "title": "EcoTrain Training Dataset v0.1.3",
+    "title": "EcoTrain Training Dataset v0.1.4",
     "datetime": "2025-01-01T00:00:00Z",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "proj:epsg": 4326,
-    "deprecated": true,
-    "gea:num_training_samples": 29982
+    "gea:num_training_samples": 33763
   },
 
   "links": [
     { "rel": "root", "href": "../../../catalog.json", "type": "application/json" },
-    { "rel": "self", "href": "./ecotrain_v0_1_3.json", "type": "application/json" },
+    { "rel": "self", "href": "./ecotrain_v0_1_4.json", "type": "application/json" },
     { "rel": "parent", "href": "../collection.json", "type": "application/json" },
     { "rel": "collection", "href": "../collection.json", "type": "application/json" },
-    { "rel": "predecessor-version", "href": "./ecotrain_v0_1_2.json" },
-    { "rel": "successor-version", "href": "./ecotrain_v0_1_4.json" },
-    { "rel": "latest-version", "href": "./ecotrain_v0_1_4.json" }
+    { "rel": "predecessor-version", "href": "./ecotrain_v0_1_3.json" }
   ],
 
   "assets": {
